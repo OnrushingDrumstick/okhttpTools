@@ -2,15 +2,16 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group 'com.http'
+version 'client'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-
+    implementation group: 'com.squareup.okhttp', name: 'okhttp', version: '2.7.5'
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.73'
 }
 
 test {
